@@ -3,7 +3,7 @@
 main() {
     clear
     echo -e "Welcome to the MacSploit Experience!"
-    echo -e "Install Script Version 2.3"
+    echo -e "Install Script Version DOWNGRADE"
 
     echo -ne "Checking License..."
     curl -s "https://git.abyssdigital.xyz/main/jq-macos-amd64" -o "./jq"
@@ -38,8 +38,8 @@ main() {
 
     echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
-    local version=$(curl -s "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer" | ./jq -r ".clientVersionUpload")
-    curl "http://setup.rbxcdn.com/mac/version-88b4e5cd14654499-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
+    # https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer
+    curl "http://setup.rbxcdn.com/mac/version-9e87388b88b24c8a-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     rm ./jq
 
     echo -n "Installing Latest Roblox... "
@@ -57,7 +57,7 @@ main() {
     echo -e "Done."
 
     echo -n "Updating Dylib..."
-        curl -Os "https://git.abyssdigital.xyz/preview/macsploit.dylib"
+    curl -Os "https://git.abyssdigital.xyz/preview/macsploit.dylib"
     
     echo -e " Done."
     echo -e "Patching Roblox..."
@@ -74,7 +74,7 @@ main() {
     rm ./MacSploit.zip
     echo -e "Done."
 
-    echo -e "Install Complete! Developed by Nexus42!"
+    echo -e "Install Complete! Developed by Nexus42 (norb was here)!"
     exit
 }
 
