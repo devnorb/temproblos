@@ -39,7 +39,7 @@ main() {
     echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
     # https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer
-    curl "http://setup.rbxcdn.com/mac/version-9e87388b88b24c8a-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
+    curl "http://setup.rbxcdn.com/mac/version-a142ab18cef44feb-RobloxPlayer.zip" -o "./RobloxPlayer.zip"
     rm ./jq
 
     echo -n "Installing Latest Roblox... "
